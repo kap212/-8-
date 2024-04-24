@@ -10,15 +10,28 @@
 body {
    background-color: black;
    font-family: Arial, Helvetica, sans-serif;
+   background-image: url(Imagens/photo-1503951914875-452162b0f3f1.avif);
 }
-.icon{
-    
+header {
+   padding: 20px;
+   display: flex;
+   flex-direction: row;
+   justify-content: space-between;
+}
+.logo {
+   width: 350px;
+}
+.icon {
+   width: 50px;
+   height: 50px;
 }
 nav {
    padding: 20px;
    text-align: end;
    display: flex;
    flex-direction: column;
+   text-align: center;
+   justify-content: center;
 }
 ul {
    display: flex;
@@ -28,6 +41,7 @@ ul {
 li {
    list-style: none;
    font-family: "Poppins";
+   text-align: center;
 }
 a {
    letter-spacing: 2px;
