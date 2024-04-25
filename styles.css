@@ -19,11 +19,7 @@ header {
    justify-content: space-between;
 }
 .logo {
-   width: 350px;
-}
-.icon {
-   width: 50px;
-   height: 50px;
+   width: 300px;
 }
 nav {
    padding: 20px;
@@ -32,27 +28,40 @@ nav {
    flex-direction: column;
    text-align: center;
    justify-content: center;
+   font-family: "poppins";
 }
 ul {
    display: flex;
-   flex-direction: row;
-   justify-content: end;
+   justify-content: space-around;
+   align-items: center;
+}
+li a {
+   margin: 0px 20px 0px 20px;
+   padding: 10px;
+   position: relative;
+   text-decoration: none;
+   text-transform: uppercase;
+   color: #ffbb00;
+   font-weight: 600;
+   font-size: 16px;
+   transition: 0.3s color;
 }
 li {
    list-style: none;
-   font-family: "Poppins";
-   text-align: center;
 }
-a {
-   letter-spacing: 2px;
+li a::after {
+   content: "";
+   position: absolute;
+   background-color: #fff;
+   height: 3px;
+   left: 0px;
+   bottom: 3px;
+   transition: 0.3s ease-in-out;
+   width: 0%;
+   transition: 0;
 }
-li a {
-   padding: 0px 20px 0px 20px;
-   text-decoration: none;
-   color: #ffbb00;
-   transition: 0.3s color ease-in-out;
-   font-weight: 600;
-   font-size: 16px;
+a:hover::after {
+   width: 100%;
 }
 li a:hover {
    color: #fff;
