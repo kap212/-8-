@@ -9,8 +9,10 @@
 }
 body {
    background-color: black;
-   font-family: Arial, Helvetica, sans-serif;
+   font-family: "Poppins", sans-serif;
    background-image: url(Imagens/photo-1503951914875-452162b0f3f1.avif);
+   background-repeat: no-repeat;
+   background-size: cover;
 }
 header {
    padding: 20px;
@@ -28,7 +30,6 @@ nav {
    flex-direction: column;
    text-align: center;
    justify-content: center;
-   font-family: "poppins";
 }
 ul {
    display: flex;
@@ -64,5 +65,22 @@ a:hover::after {
    width: 100%;
 }
 li a:hover {
-   color: #fff;
+   color: #ffffff;
+}
+main {
+   width: 70%; /* Define a largura do elemento main */
+   margin: 0 auto; /* Centraliza o elemento main na página */
+   padding: 20px; /* Adiciona um espaço interno ao redor do conteúdo dentro do elemento main */
+   background-color: #00000070; /* Define a cor de fundo do elemento main */
+   border-radius: 8px;
+   background-color: ;
+}
+.container_2 {
+   display: flex;
+   justify-content: space-between;
+}
+.cut {
+   background-size: cover;
+   max-height: 350px;
+   border-radius: 5px;
 }
