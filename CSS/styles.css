@@ -83,12 +83,12 @@ main {
 
    padding: 20px;
    background-color: #00000070;
-   border-radius: 8px;
+   border-radius: 10px;
 }
 .cut {
    background-size: cover;
    max-height: 300px;
-   border-radius: 5px;
+   border-radius: 10px;
    transition: 0.3s ease-in-out;
 }
 .cut:hover {
@@ -104,36 +104,69 @@ main {
    padding: 40px 0px 40px 0px;
 }
 .sb-div {
+   border-radius: 10px;
+   background-color: #00000070;
    display: flex;
    flex-direction: row;
    justify-content: space-between;
    align-items: center;
-   padding: 0px 10px 0px 10px;
+   padding: 20px;
 }
-.sb-h1 {
+.h1 {
    text-align: start;
    color: #ffbb00;
    font-weight: 500;
 }
-.sb-p {
+p {
    color: #fff;
    text-align: justify;
-   width: 300px;
+   width: 400px;
 }
 .sb-img {
    width: 700px;
    border-radius: 5px;
 }
+.map {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   background-color: #00000070;
+   border-radius: 10px;
+   padding: 20px;
+}
+.icon-map {
+   display: flex;
+   justify-content: space-around;
+}
+.h-map {
+   text-align: start;
+}
+#if-map {
+   border-radius: 10px;
+   width: 70%;
+}
 footer {
+   display: flex;
+   justify-content: center;
    background-color: #ffbb00;
    color: #fff;
    padding: 20px;
+   text-align: center;
+   flex-direction: column;
+   align-items: center;
+}
+.ul-footeer {
+   justify-content: space-between;
+}
+.p-footer {
    text-align: center;
 }
 .footer-a {
    text-decoration: none;
    list-style: none;
    color: #fff;
+   justify-content: space-between;
+   padding: 0px 100px 0px 100px;
 }
 ::-webkit-scrollbar {
    width: 10px;
