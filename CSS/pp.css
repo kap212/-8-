@@ -1,0 +1,14 @@
+.h1-tu {
+   color: #ffbb00;
+   text-align: start;
+   font-weight: 500;
+}
+.p-tu {
+   color: #ffffff;
+   text-align: justify;
+   list-style: decimal;
+   padding: 5px;
+}
+footer {
+   margin-top: 50px;
+}

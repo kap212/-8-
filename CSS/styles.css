@@ -10,7 +10,7 @@
 body {
    background-color: black;
    font-family: "Poppins", sans-serif;
-   background-image: url(Imagens/photo-1503951914875-452162b0f3f1.avif);
+   background-image: url(Fundo/photo-1503951914875-452162b0f3f1.avif);
    background-repeat: no-repeat;
    background-size: cover;
 }
@@ -36,7 +36,11 @@ ul {
    justify-content: space-around;
    align-items: center;
 }
-li a {
+li {
+   list-style: none;
+   padding: 0px 20px 0px 20px;
+}
+.nav-a {
    margin: 0px 20px 0px 20px;
    padding: 10px;
    position: relative;
@@ -47,10 +51,10 @@ li a {
    font-size: 16px;
    transition: 0.3s color;
 }
-li {
+.nav-a {
    list-style: none;
 }
-li a::after {
+.nav-a::after {
    content: "";
    position: absolute;
    background-color: #fff;
@@ -61,26 +65,83 @@ li a::after {
    width: 0%;
    transition: 0;
 }
-a:hover::after {
+.nav-a:hover::after {
    width: 100%;
 }
-li a:hover {
+.nav-a:hover {
    color: #ffffff;
 }
 main {
-   width: 70%; /* Define a largura do elemento main */
-   margin: 0 auto; /* Centraliza o elemento main na página */
-   padding: 20px; /* Adiciona um espaço interno ao redor do conteúdo dentro do elemento main */
-   background-color: #00000070; /* Define a cor de fundo do elemento main */
-   border-radius: 8px;
-   background-color: ;
+   width: 80%;
+   margin: 0 auto;
+   padding: 20px;
+   text-align: center;
 }
 .container_2 {
    display: flex;
    justify-content: space-between;
+
+   padding: 20px;
+   background-color: #00000070;
+   border-radius: 8px;
 }
 .cut {
    background-size: cover;
-   max-height: 350px;
+   max-height: 300px;
    border-radius: 5px;
+   transition: 0.3s ease-in-out;
+}
+.cut:hover {
+   transform: scale(1.05);
+}
+.h1-main {
+   font-weight: 300;
+   color: #ffbb00;
+   font-weight: 500;
+   padding: 20px;
+}
+.sobre-nos {
+   padding: 40px 0px 40px 0px;
+}
+.sb-div {
+   display: flex;
+   flex-direction: row;
+   justify-content: space-between;
+   align-items: center;
+   padding: 0px 10px 0px 10px;
+}
+.sb-h1 {
+   text-align: start;
+   color: #ffbb00;
+   font-weight: 500;
+}
+.sb-p {
+   color: #fff;
+   text-align: justify;
+   width: 300px;
+}
+.sb-img {
+   width: 700px;
+   border-radius: 5px;
+}
+footer {
+   background-color: #ffbb00;
+   color: #fff;
+   padding: 20px;
+   text-align: center;
+}
+.footer-a {
+   text-decoration: none;
+   list-style: none;
+   color: #fff;
+}
+::-webkit-scrollbar {
+   width: 10px;
+   background-color: #000000;
+}
+::-webkit-scrollbar-thumb {
+   background-color: #424242;
+   border-radius: 10px;
+   border: #fff;
+   border: 5px;
 }
