@@ -9,6 +9,30 @@
    list-style: decimal;
    padding: 5px;
 }
+p {
+   width: 100%;
+}
 footer {
+   display: flex;
+   justify-content: center;
+   background-color: #ffbb00;
+   color: #fff;
+   padding: 20px;
+   text-align: center;
+   flex-direction: column;
+   align-items: center;
    margin-top: 50px;
+}
+.ul-footeer {
+   justify-content: space-between;
+}
+.p-footer {
+   text-align: center;
+}
+.footer-a {
+   text-decoration: none;
+   list-style: none;
+   color: #fff;
+   justify-content: space-between;
+   padding: 0px 100px 0px 100px;
 }
