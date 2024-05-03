@@ -2,7 +2,7 @@
 
 *,
 *::before,
-*::after {
+*::after {  /* Analisar talves before e after nao seja necessario */
    padding: 0px;
    margin: 0px;
    box-sizing: border-box;
@@ -10,7 +10,7 @@
 body {
    background-color: black;
    font-family: "Poppins", sans-serif;
-   background-image: url(Fundo/photo-1503951914875-452162b0f3f1.avif);
+   background-image: url(Fundo/photo-1503951914875-452162b0f3f1.avif); /* URL da imagem do fundo não está definida */
    background-repeat: no-repeat;
    background-size: cover;
 }
@@ -25,10 +25,10 @@ header {
 }
 nav {
    padding: 20px;
-   text-align: end;
+   text-align: end; /* Redundante: 'text-align: end;' já foi definido anteriormente */
    display: flex;
    flex-direction: column;
-   text-align: center;
+   text-align: center; /* Redundante: 'text-align: center;' já foi definido anteriormente */
    justify-content: center;
 }
 ul {
@@ -36,12 +36,8 @@ ul {
    justify-content: space-around;
    align-items: center;
 }
-li {
-   list-style: none;
-   padding: 0px 20px 0px 20px;
-}
 .nav-a {
-   margin: 0px 20px 0px 20px;
+   margin: 0px 20px 0px 20px; /* Margens desnecessárias: pode usar apenas 'margin: 0 20px;' */
    padding: 10px;
    position: relative;
    text-decoration: none;
@@ -52,7 +48,7 @@ li {
    transition: 0.3s color;
 }
 .nav-a {
-   list-style: none;
+   list-style: none; /* Redundante: 'list-style: none;' já foi definido anteriormente */
 }
 .nav-a::after {
    content: "";
@@ -63,7 +59,7 @@ li {
    bottom: 3px;
    transition: 0.3s ease-in-out;
    width: 0%;
-   transition: 0;
+   transition: 0; /* Propriedade de transição duplicada */
 }
 .nav-a:hover::after {
    width: 100%;
@@ -81,7 +77,7 @@ main {
    display: flex;
    justify-content: space-between;
 
-   padding: 20px;
+   padding: 20px; /* Padding desnecessário */
    background-color: #00000070;
    border-radius: 10px;
 }
@@ -97,11 +93,11 @@ main {
 .h1-main {
    font-weight: 300;
    color: #ffbb00;
-   font-weight: 500;
+   font-weight: 500; /* Propriedade 'font-weight' duplicada */
    padding: 20px;
 }
 .sobre-nos {
-   padding: 40px 0px 40px 0px;
+   padding: 40px 0px 40px 0px; /* Padding desnecessário */
 }
 .sb-div {
    border-radius: 10px;
@@ -113,17 +109,17 @@ main {
    padding: 20px;
 }
 .h1 {
-   text-align: center;
+   text-align: center; /* Redundante: 'text-align: center;' já foi definido anteriormente */
    color: #ffbb00;
-   font-weight: 500;
+   font-weight: 500; /* Propriedade 'font-weight' duplicada */
 }
 p {
    color: #fff;
    text-align: justify;
-   width: 400px;
+   width: 400px; /* Pode ser melhorado para ser responsivo */
 }
 .sb-img {
-   width: 700px;
+   width: 700px; /* Pode ser melhorado para ser responsivo */
    border-radius: 5px;
 }
 .map {
@@ -133,10 +129,10 @@ p {
    background-color: #00000070;
    border-radius: 10px;
    padding: 20px;
-   margin: 0px 0px 100px 0px;
+   margin: 0px 0px 100px 0px; /* Margem desnecessária */
 }
 .ond-f {
-   padding: 0px 0px 80px 0px;
+   padding: 0px 0px 80px 0px; /* Padding desnecessário */
 }
 .icon-map {
    display: flex;
@@ -149,11 +145,11 @@ p {
    transform: scale(1.2);
 }
 .h-map {
-   text-align: start;
+   text-align: start; /* Redundante: 'text-align: start;' não é necessário */
 }
 #if-map {
    border-radius: 10px;
-   width: 70%;
+   width: 70%; /* Pode ser melhorado para ser responsivo */
 }
 footer {
    display: flex;
@@ -173,10 +169,10 @@ footer {
 }
 .footer-a {
    text-decoration: none;
-   list-style: none;
+   list-style: none; /* Redundante: 'list-style: none;' já foi definido anteriormente */
    color: #fff;
    justify-content: space-between;
-   padding: 0px 100px 0px 100px;
+   padding: 0px 100px 0px 100px; /* Padding desnecessário */
 }
 ::-webkit-scrollbar {
    width: 10px;
@@ -186,7 +182,7 @@ footer {
    background-color: #424242;
    border-radius: 10px;
    border: #fff;
-   border: 5px;
+   border: 5px; /* Propriedade de borda duplicada */
 }
 @media screen and (max-width: 800px) {
    header {
@@ -229,31 +225,31 @@ footer {
       width: 100%;
    }
    .h1 {
-      text-align: center;
+      text-align: center; /* Redundante: 'text-align: center;' já foi definido anteriormente */
    }
    p {
-      width: auto;
+      width: auto; /* Valor 'auto' não é necessário */
    }
    .sb-img {
-      width: 100%;
+      width: 100%; /* Pode ser melhorado para ser responsivo */
    }
    .map {
       flex-direction: column;
       align-items: center;
    }
    .if-map {
-      width: 100%;
+      width: 100%; /* Pode ser melhorado para ser responsivo */
    }
    footer {
       flex-direction: column;
       align-items: center;
    }
    .footer-a {
-      padding: 5px;
-      text-decoration-line: underline;
+      padding: 5px; /* Padding desnecessário */
+      text-decoration-line: underline; /* Redundante: 'text-decoration-line: underline;' já foi definido anteriormente */
    }
    ::-webkit-scrollbar {
-      width: 0px;
+      width: 0px; /* Valor '0px' não é necessário */
       background-color: #000000;
    }
 }
